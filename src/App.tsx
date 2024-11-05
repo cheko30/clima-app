@@ -1,8 +1,9 @@
+import styles from "./App.module.css"
 
 function App() {
   return (
     <>
-      <h1>Buscador Clima</h1>
+      <h1 className={styles.title}>Buscador Clima</h1>
     </>
   )
 }
