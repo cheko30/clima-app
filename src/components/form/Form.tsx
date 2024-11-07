@@ -5,7 +5,7 @@ import { SearchType } from "../../types";
 import Alert from "../Alert/Alert";
 
 type FormProps = {
-    fechtWeather: () => void
+    fechtWeather: (search: SearchType) => Promise<void>
 }
 
 export default function Form({fechtWeather}: FormProps) {
@@ -32,7 +32,7 @@ export default function Form({fechtWeather}: FormProps) {
             return
         }
         
-        fechtWeather()
+        fechtWeather(search)
 
     }
 
